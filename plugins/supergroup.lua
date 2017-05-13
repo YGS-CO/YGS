@@ -119,7 +119,7 @@ local user_num = "🗣 تعداد افراد : "..result.participants_count.."\n
 local kicked_num = "❌ تعداد افراد اخراج شده : "..result.kicked_count.."\n"
 local channel_id = "🆔 آیدی سوپرگروه : "..result.peer_id.."\n"
 if result.username then
-	channel_username = "🔢 یوزرنیم : @"..result.username
+	channel_username = "🔢 یوزرنیم : "..result.username
 else
 	channel_username = ""
 end
@@ -1484,7 +1484,7 @@ local function run(msg, matches)
 				resolve_username(username,  callbackres, cbres_extra)
 			else
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested SuperGroup ID")
-				return "🤖TeleSurena🤖\n➖➖➖➖➖➖➖➖➖➖➖\n👤درباره شما👤\n📝نام شما : " ..string.gsub(msg.from.print_name, "_", " ").. "\n📝ایدی شما : "..msg.from.id.."\n📝یوزرنیم شما : @"..(msg.from.username or '----').."\n➖➖➖➖➖➖➖➖➖➖➖\n👥درباره گروه👥\n📝نام سوپرگروه : " ..string.gsub(msg.to.print_name, "_", " ").. "\n📝ایدی سوپر گروه : "..msg.to.id.."\n➖➖➖➖➖➖➖➖➖➖➖\n📝@TeleSurenaCH📝"
+				return "🤖YGS-CO🤖\n➖➖➖➖➖➖➖➖➖➖➖\n👤درباره شما👤\n📝نام شما : " ..string.gsub(msg.from.print_name, "_", " ").. "\n📝ایدی شما : "..msg.from.id.."\n📝یوزرنیم شما : @"..(msg.from.username or '----').."\n➖➖➖➖➖➖➖➖➖➖➖\n👥درباره گروه👥\n📝نام سوپرگروه : " ..string.gsub(msg.to.print_name, "_", " ").. "\n📝ایدی سوپر گروه : "..msg.to.id.."\n➖➖➖➖➖➖➖➖➖➖➖\n📝@YGSCO📝"
             end
 		end
 
