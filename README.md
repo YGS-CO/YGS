@@ -1,14 +1,11 @@
-#[TeleSurena](https://telegram.me/SurenaTeam)
+# [YGS-CO](https://telegram.me/YGSCO)
 
-#کلون یا هرگونه کپی برداری بدون ذکر منبع ممنوع و حلال نمی باشد
-
-####اولین ربات کاملا فارسی برای سوپرگروه
-####با امکانات فوق العاده
-####منبع و پایه ربات : TeleSeed 
+**اولین ربات کاملا فارسی برای سوپرگروه
+با امکانات فوق العاده**
 
 # نصب
 
-####برای ران کردن ابتدا به سایت codeanywhere.com بروید و یا یک سرور مجازی تهیه کنید و بعد کد های زیر را در سرور خود وارد کنید
+**(برای ساخت ربات یک سرور تهیه کنید.(سرور رایگان**
 
 ```sh
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev
@@ -21,3 +18,8 @@ chmod +x launch.sh
 ./launch.sh install
 ./launch.sh 
 ```
+
+# Support
+[David](telegram.me/DevWolf)
+
+[Channel](telegram.me/YGSCO)
