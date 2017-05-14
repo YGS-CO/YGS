@@ -1,5 +1,3 @@
---This Plugin Writed By @ImanDaneshi
---Full Edit By @Navid_Quick
 local function set_bot_photo(msg, success, result)
   local receiver = get_receiver(msg)
   if success then
