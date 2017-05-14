@@ -1,6 +1,6 @@
 do
-local Arian = 232006008,239832443
-local Sosha =  000000000
+local Arian = 00,00
+local Sosha =  00
 --local Sosha2 = 164484149
 
 local function setrank(msg, name, value,receiver) -- setrank function
