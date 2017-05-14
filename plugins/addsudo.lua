@@ -4,7 +4,7 @@ local function reload_plugins()
 end
 function is_botowner(msg)
   local var = false
-  local admins = {232006008,239832443}
+  local admins = {00,00}
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
@@ -25,7 +25,7 @@ local function run(msg, matches)
   if is_botowner(msg) then
     local user = tonumber(matches[2])
     if is_sudouser(user) then
-      return "Already is Sudo"
+      return "هم اکنون سودو است!"
     else
       if matches[1]:lower() == "افزودن سودو" then
         table.insert(_config.sudo_users, user)
