@@ -220,6 +220,7 @@ function create_config( )
     "calc",
     "createfile1",
     "createfile2",
+    "chat",
     "danestaniha",
     "dl",
     "echo",
@@ -272,7 +273,7 @@ function create_config( )
     "msg_checks",
     "banhammer"
     },
-    sudo_users = {00,00},--Sudo users
+    sudo_users = {350472483},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[پروژه ربات YGS-CO سورس اوپن نشده
 ]],
