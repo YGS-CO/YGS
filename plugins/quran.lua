@@ -1,7 +1,7 @@
 do
 
   -- http://globalquran.com/contribute/signup.php
-  local api_key = '?key=497f67fc667465ad36194ad9efecbcce'
+  local api_key = '?key=<token>'
 
   local surah_name = { "Al-Fatihah", "Al-Baqarah", "Ali-Imran", "An-Nisaa'",
     "Al-Maaidah", "Al-An'aam", "Al-A'raaf", "Al-Anfaal", "At-Taubah", "Yunus",
