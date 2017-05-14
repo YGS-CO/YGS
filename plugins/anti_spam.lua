@@ -1,5 +1,3 @@
---این پلاگین توسط : @ImanDaneshi
---سپاس فراوان از @MohammadArak
 kicktable = {}
 
 do
@@ -148,5 +146,3 @@ return {
   pre_process = pre_process
 }
 end
---این پلاگین توسط : @ImanDaneshi
---سپاس فراوان از @MohammadArak
