@@ -152,7 +152,7 @@ end
 
 local function run(msg, matches)
   -- Show the available plugins
-  if matches[1] == 'plug' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1] == 'plug' or 'پلاگین' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return list_all_plugins()
   end
 
@@ -208,6 +208,7 @@ return {
           "plug * : فعال شدن همه پلاگین ها" },
           },
   patterns = {
+    "^پلاگین$",
     "^plug$",
     "^plug (+) ([%w_%.%-]+)$",
     "^plug (-) ([%w_%.%-]+)$",
