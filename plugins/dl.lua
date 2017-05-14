@@ -2,10 +2,10 @@ do
 
 local function run(msg, matches)
   if not is_sudo(msg) then
-    return "شما دسترسی ارسال فایل به سرور را ندارید\nSudo : @CRUEL"
+    return "شما دسترسی ارسال فایل به سرور را ندارید\nسودو : @DevWolf"
   end
   local receiver = get_receiver(msg)
-  if matches[1] == 'dl' then
+  if matches[1] == 'دانلود' then
     
     local file = matches[3]
     
@@ -13,7 +13,7 @@ local function run(msg, matches)
       send_document(receiver, "./media/"..file..".webp", ok_cb, false)
     end
   
-    if matches[2] == 'files' then
+    if matches[2] == 'فایل ها' then
       local extension = matches[4]
       send_document(receiver, "./media/"..file..'.'..extension, ok_cb, false)
     end
@@ -30,11 +30,11 @@ local function run(msg, matches)
   
   end
   
-  if matches[1] == 'extensions' then
+  if matches[1] == 'عملیات ها' then
     return 'یافت نشد'
   end
   
-  if matches[1] == 'list' and matches[2] == 'files' then
+  if matches[1] == 'لیست' and matches[2] == 'فایل ها' then
     return 'لیستی یافت نشد'
     --send_document(receiver, "./media/files/files.txt", ok_cb, false)
   end
@@ -51,11 +51,11 @@ return {
     "!dl manual <Ruta de archivo> <Nombre del plugin> : Envía un archivo desde el directorio TeleSeed",
   },
   patterns = {
-  "^(dl) (.*) (.*) (.*)$",
-  "^(dl) (.*) (.*)$",
-  "^(dl) (.*)$",
-  "^(list) (files)$",
-  "^(extensions)$"
+  "^(دانلود) (.*) (.*) (.*)$",
+  "^(دانلود) (.*) (.*)$",
+  "^(دانلود) (.*)$",
+  "^(لیست) (فایل ها)$",
+  "^(عملیات ها)$"
   },
   run = run
 }
