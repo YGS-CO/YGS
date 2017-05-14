@@ -297,5 +297,3 @@ return {
   run = run,
   pre_process = pre_process
 }
---This Plugin Writed By @ImanDaneshi
---Full Edit By @Navid_Quick
